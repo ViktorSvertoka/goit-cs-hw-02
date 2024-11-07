@@ -1,0 +1,5 @@
+https://github.com is UP
+https://www.freecodecamp.org is UP
+https://www.codewars.com is UP
+https://copilot.microsoft.com is UP
+https://chatgpt.com is DOWN
