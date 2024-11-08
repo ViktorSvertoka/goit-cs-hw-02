@@ -1,0 +1,49 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #FFEFBA, #FFFFFF);
+}
+
+.main-text {
+    margin-top: 100px;
+    font-size: 24px;
+    color: #333;
+}
+
+.check-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.check-button:hover {
+    background-color: #45a049;
+}
+
+.response {
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 5px;
+    color: darkslategray;
+    font-size: 16px;
+    font-weight: bolder;
+    width: 40%; /* Адаптивна ширина */
+    height: 3rem;
+    max-width: 600px; /* Максимальна ширина */
+    display: flex; /* Використовує flexbox для центрування */
+    justify-content: center; /* Центрує вміст по горизонталі */
+    align-items: center; /* Центрує вміст по вертикалі */
+}
+
+.success {
+    background-color: #90ee90; /* light green */
+}
+
+.error {
+    background-color: #ffcccb; /* light red */
+}
