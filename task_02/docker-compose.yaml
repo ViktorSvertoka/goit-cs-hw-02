@@ -1,0 +1,38 @@
+version: "3.9"
+
+services:
+  postgres_db:
+    image: postgres:13
+    container_name: postgres_db
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: qwerty123
+      POSTGRES_DB: hw02
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    networks:
+      - app_network
+
+  fastapi_app:
+    build:
+      context: .
+    container_name: fastapi_app
+    command: uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+    volumes:
+      - .:/new_directory
+    ports:
+      - "8000:8000"
+    depends_on:
+      - postgres_db
+    environment:
+      DATABASE_URL: postgres://postgres:qwerty123@postgres_db:5432/hw02
+    networks:
+      - app_network
+
+networks:
+  app_network:
+
+volumes:
+  postgres-data:
