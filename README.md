@@ -125,3 +125,11 @@ SQLALCHEMY_DATABASE_URL = f"postgresql+psycopg2://postgres:567234@localhost:5432
 - Використано `Docker Compose`, команду `docker-compose up` для побудови та запуску середовища.
 
 - Застосунок є функціональним, а база даних — доступною, що підтверджується натисканням кнопки Перевірити БД.
+
+### Результат виконаного завдання № 1
+
+![Results](./task_01/print_screen.png)
+
+### Результат виконаного завдання № 2
+
+![Results](./task_02/print_screen.png)
